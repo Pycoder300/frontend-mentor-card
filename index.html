@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; 
+    position: relative;
+    top: 9rem;
+    left: 12rem;
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: #12072b;
+      color: white;
+    }
+    .card-container{
+      display: inline-block;
+      margin: 80px;
+      position: relative;
+      left: 9rem;
+      top: 7rem;
+      background-color: #201b47;
+      border-radius: 10px;
+    }
+    .card-image{
+      float: right;
+      width: 400px;
+      height: 300px;
+      opacity: 0.3;
+    }
+    .card-image > img{
+      height: 100%;
+      width: 100%;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    .card-flex{
+      display: flex;
+      align-items:flex-start;
+      justify-content: space-between;
+      width: 300px;
+      position: absolute;
+      left: 4rem;
+      top: 14em;
+    }
+    .card-content{
+      padding: 13px;
+      position: relative;
+    }
+    .header-word{
+      color: blueviolet;
+    }
+    .amount{
+      font-weight: 900;
+      font-size: 1.5rem;
+    }
+    @media(max-width:650px){
+      .card-container{
+      display: inline-block;
+      margin: 80px;
+      position: relative;
+      left: 9rem;
+      top: 7rem;
+      background-color: #201b47;
+      border-radius: 10px;
+      height: 800px;
+    }
+    .card-content{
+      padding: 13px;
+      position: relative;
+      top: 30px;
+      left: 15px;
+    }
+    .card-flex{
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 200px;
+      position: absolute;
+      top: 540px;
+      left: 30px;
+    }
+    .card-image > img{
+      height: 100%;
+      width: 100%;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 0px;
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card-image">
+      <img src="./images/image-header-desktop.jpg">
+    </div>
+    <div class="card-content">
+      <h1>Get <span class="header-word">insights</span> that help your business grow.</h1>
+      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+          experience, and overall efficiency.</p>
+      <div class="card-flex">
+        <div class="flex-item"><span class="amount">10k+</span><br>companies</div>
+        <div class="flex-item"><span class="amount">314</span><br>templates</div>
+        <div class="flex-item"><span class="amount">12m+</span><br>queries</div>
+      </div>
+    </div>
+    
+    
+  </div>
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Arnab Das</a>.
+  </div>
+</body>
+</html>
